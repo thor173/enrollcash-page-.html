@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SkillPro - Learn in Style</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #0d1117; /* Dark gray-blue background */
+      color: #e5e5e5; /* Soft white for text */
+    }
+
+    /* Container */
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    /* Header */
+    .header {
+      background-color: #161b22; /* Deep dark color */
+      padding: 15px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 2px solid #21262d; /* Subtle border */
+    }
+
+    .header .logo {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #58a6ff; /* Vibrant blue */
+    }
+
+    .header .nav a {
+      color: #e5e5e5;
+      text-decoration: none;
+      font-weight: bold;
+      margin-left: 20px;
+      transition: color 0.3s;
+    }
+
+    .header .nav a:hover {
+      color: #58a6ff;
+    }
+
+    /* Hero Section */
+    .hero {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background: url(' shadow_.jpeg') no-repeat center center/cover; /* Replace with your image */
+      position: relative;
+    }
+
+    .hero::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(13, 17, 23, 0.8); /* Dark overlay */
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      color: #e5e5e5;
+    }
+
+    .hero h1 {
+      font-size: 3.5rem;
+      margin-bottom: 20px;
+      background: linear-gradient(to right, #58a6ff, #7ee787); /* Blue to green gradient */
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+    }
+
+    .hero .btn {
+      padding: 15px 30px;
+      font-size: 1rem;
+      background: linear-gradient(to right, #7ee787, #58a6ff); /* Green to blue gradient */
+      border: none;
+      border-radius: 5px;
+      color: #0d1117; /* Contrast for text */
+      font-weight: bold;
+      cursor: pointer;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+        .enroll-btn:hover{
+            transform:  scale(1.1);
+             box-shadow: 0px 5px 15px rgba(94, 201, 97, 0.5);
+        }
+
+    .hero .btn:hover {
+      transform: scale(1.1);
+      box-shadow: 0px 5px 15px rgba(94, 201, 97, 0.5);
+    }
+
+    /* Courses Section */
+    .courses {
+      padding: 50px 0;
+      background-color: #161b22;
+    }
+
+    .courses h2 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 50px;
+      color: #7ee787; /* Vibrant green */
+    }
+
+    .course-list {
+      display: flex;
+      gap: 50px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .course-card {
+      background-color: #21262d;
+      padding: 50px;
+      border-radius: 10px;
+      text-align: center;
+      max-width: 300px;
+      transition: transform 0.3s ease, box-shadow 0.3s;
+    }
+
+    .course-card img {
+      max-width: 100%;
+      border-radius: 10px;
+      margin-bottom: 50px;
+    }
+
+    .course-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0px 10px 15px rgba(88, 166, 255, 0.3);
+    }
+
+    .btn-secondary {
+      padding: 10px 20px;
+      background: linear-gradient(to right, #58a6ff, #7ee787);
+      color: #161b22;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 20px;
+      transition: background 0.3s ease;
+    }
+
+    .btn-secondary:hover {
+      background: linear-gradient(to left, #58a6ff, #7ee787);
+    }
+
+    /* Footer */
+    .footer {
+      background-color: #161b22;
+      padding: 50px;
+      text-align: center;
+      color: #e5e5e5;
+      border-top: 2px solid #21262d;
+    }
+
+    .footer a {
+      color: #58a6ff;
+      text-decoration: none;
+      margin: 0 50px;
+    }
+
+    .footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">SkillPro</div>
+    <nav class="nav">
+      <a href="#courses">Courses</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Learn in Style</h1>
+      <p>Master skills that empower your future. use this in making your future or REGRET.</p>
+      <button class="btn">Browse Courses</button>
+    </div>
+  </section>
+
+  <!-- Courses Section -->
+  <section id="courses" class="courses">
+    <h2>Popular Courses</h2>
+    <div class="course-list">
+      <div class="course-card">
+        <img src="https://i.imgur.com/Xeq8DqU.jpeg" alt="Web Development">
+        <h3>How To Make SuccessfulCashpage </h3>
+        <p>How To Run Successful Cashpage💸💸. <br><br> AT ONLY <BR>      $49</p>
+                <br><br> 
+        <a href="E:\wifi uni.html\ENROLL CASH PAGE .HTML" class="btn-secondary">Enroll Now</a>
+      </div>
+      <div class="course-card">
+        <img src="https://i.imgur.com/RLLG6Bd.jpeg" alt="Graphic Design">
+        <h3>DROPSHIPPING</h3>
+        <p>learn how To find Product,<br>How To Sell It,<br>How To Make Profit,<br> How To Ship The Product<br> And Many More Related Topic With<br> Our Best Faculties.</p>
+                <br><br>
+        <a href="E:\wifi uni.html\ENROLL DROPSHIPPING.HTML" class="btn-secondary">Enroll Now</a>
+      </div>
+      <div class="course-card">
+        <img src="https://i.imgur.com/T94tMdD.jpeg" alt="Python">
+        <h3>WEBSITE DEVELOPING</h3>
+        <p>Lear How To Make Or Generate a Website By using AI And How To Make Profit From It.<p>
+                 <br><br>
+        <a href="E:\wifi uni.html\enroll now website .html" class="btn-secondary">Enroll Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2024 SkillPro. All rights reserved.</p>
+    <a href="#">Privacy Policy</a>
+    <a href="#">Terms of Service</a>
+  </footer>
+</body>
+</html>
